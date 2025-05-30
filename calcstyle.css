@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 .caption{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     justify-content: center;
-    color: #c7c7c7;
+    color: #ff9a27;
 }
 .container {
     width: 100%;
@@ -16,10 +16,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #96b2c1;
+    background: #afc8d6e4;
 }
 .calculator{
-    background: #103b3d;
+    background: #0f2c44;
     padding:20px;
     border-radius: 20px;
 }
@@ -30,16 +30,18 @@
     border-radius: 10px;
     width:60px;
     height: 60px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.068), 5px 5px 15px rgba(0, 0, 0, 0.392);
+    box-shadow: -8px -8px 15px rgba(211, 211, 211, 0.105), 5px 5px 15px rgba(0, 0, 0, 0.392);
     background: transparent;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(226, 226, 226);
     transition: 0.2s color;
     transition: 0.3s ease-in-out;
+    cursor:pointer;
 }
 .calculator form input:hover{
-    color:orange;
-    transform:scale(1.05)
+    color:#ff9a27;
+    transform:scale(1.08);
+    
 }
 form .display{
     display:flex;
@@ -49,14 +51,17 @@ form .display{
 form .display input{
     text-align: right;
     flex:1;
-    font-size: 45px;
+    height:80px;
+    font-size: 50px;
     box-shadow: none;
+    align-self: center;
 }
 form input.equal{
-    width:140px;
-    color:orange;
-    font-size: 30px;
+    width:135px;
+    color:#ff9a27;
+    font-size: 40px;
 }
 form input.clrdel{
    color: rgb(45, 186, 228);
+   font-size: 30px;
 }
